@@ -1,0 +1,93 @@
+#header-img{
+    flex : 1;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+h1 {
+    flex: 15;
+    display: block;
+}
+
+h2 {
+    display: block;
+    background-color: black;
+    color: white;
+}
+
+#top_title {
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+#nav-bar {
+    overflow: hidden;
+    width:100%;
+    background-color: black;
+}
+
+#header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    background-color: red;
+}
+
+#nav-bar a {
+    background-color: black;
+    color: white;
+    padding: 3px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#nav-bar a:hover {
+    background-color: white;
+    color: black;
+}
+
+#power {
+    display: block;
+    text-align: center;
+}
+
+#pumkins {
+    display: block;
+    margin: 10px auto 20px;
+}
+
+#why {
+    display: block;
+    padding-top: 150px;
+    text-align: center;
+}
+
+#store {
+    display: block;
+    margin: 10px auto 20px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    }
+
+#contact > div {
+    width: auto;
+    margin: 10px;
+    text-align: center;
+}
+
+@media (min-width: 600px){
+    #gmap {
+        width: 600px;
+    }
+}
+
+@media (max-width: 600px){
+    #gmap {
+        width: 1vmax;
+    }
+}
