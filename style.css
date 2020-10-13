@@ -1,3 +1,10 @@
+html {
+    background-image: url("https://ychef.files.bbci.co.uk/1600x900/p07v2wjn.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 #header-img{
     flex : 1;
     width: auto;
@@ -16,24 +23,45 @@ h2 {
     color: white;
 }
 
+#content {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 0;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 0) 100%);    
+}
+
+body {
+    margin: 0;
+    padding: 0%;
+}
+
+
+/*************************************************************Moving Title***********************************/
+
 #top_title {
     display: flex;
     align-items: center;
     background-color: white;
 }
 
-#nav-bar {
-    overflow: hidden;
-    width:100%;
-    background-color: black;
-}
-
 #header {
     overflow: hidden;
     position: fixed;
     top: 0;
+    width: auto;
+    margin: 0;
+    padding: 0;
     background-color: red;
 }
+
+/*********************************************Navergation bar**********************************/
+
+#nav-bar {
+    overflow: hidden;
+    background-color: black;
+}
+
 
 #nav-bar a {
     background-color: black;
@@ -47,6 +75,8 @@ h2 {
     background-color: white;
     color: black;
 }
+
+/*******************************************Information content*****************************************/
 
 #power {
     display: block;
@@ -69,6 +99,8 @@ h2 {
     margin: 10px auto 20px;
 }
 
+/************************************************contact*****************************************/
+
 #contact {
     display: flex;
     justify-content: center;
@@ -80,14 +112,20 @@ h2 {
     text-align: center;
 }
 
+input {
+    width: 300px;
+}
+
 @media (min-width: 600px){
     #gmap {
         width: 600px;
+        height: 600px;
     }
 }
 
 @media (max-width: 600px){
     #gmap {
         width: 1vmax;
+        height: 1vmax;
     }
 }
